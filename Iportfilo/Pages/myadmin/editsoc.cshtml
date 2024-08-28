@@ -1,0 +1,50 @@
+﻿@page
+@model Iportfilo.Pages.myadmin.editsocModel
+@{
+}
+<div class="container">
+    <form method="post">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>
+                    Update Social Links
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 justify-content-center">
+                <label class="form-label"> Twitter </label>
+                <input class="form-control" asp-for="socialNetwork.Twiter" />
+                <input class="form-control" Hidden asp-for="socialNetwork.Id" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 justify-content-center">
+                <label class="form-label"> Facebook </label>
+                <input class="form-control" asp-for="socialNetwork.Facebook" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 justify-content-center">
+                <label class="form-label"> Skype </label>
+                <input class="form-control" asp-for="socialNetwork.skype" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 justify-content-center">
+                <label class="form-label"> Instagram </label>
+                <input class="form-control" asp-for="socialNetwork.Instagram" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 justify-content-center">
+                <label class="form-label"> LinkdIn </label>
+                <input class="form-control" asp-for="socialNetwork.Linkin" />
+                <input type="submit" value=" Update Social Links " class="btn btn-primary">
+            </div>
+        </div>
+
+    </form>
+</div>

@@ -1,0 +1,31 @@
+﻿@page
+@model Iportfilo.Pages.myadmin.editskilModel
+@{
+}
+div class="container">
+<form method="post">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>
+                Update Skills
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 justify-content-center">
+            <label class="form-label"> Skill Name </label>
+            <input class="form-control" asp-for="skills.Name" />
+            <input class="form-control" hidden asp-for="skills.Id" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 justify-content-center">
+            <label class="form-label"> Percentege </label>
+            <input class="form-control" asp-for="skills.Percentage" />
+        </div>
+    </div>
+    <div class="row">
+        <input type="submit" value=" Add Skills " class="btn btn-primary" />
+    </div>
+</form>
+</div>

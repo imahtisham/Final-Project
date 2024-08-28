@@ -1,0 +1,30 @@
+﻿@page
+@model Iportfilo.Pages.myadmin.IndexserviceModel
+@{
+}
+<div class="container">
+    <form method="post">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>
+                    Services
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 justify-content-center">
+                <label class="form-label"> Title </label>
+                <input class="form-control" asp-for="services.IconeName" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 justify-content-center">
+                <label class="form-label"> Title </label>
+                <input class="form-control" asp-for="services.Title" />
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Add About" class="btn btn-primary" />
+        </div>
+    </form>
+</div>

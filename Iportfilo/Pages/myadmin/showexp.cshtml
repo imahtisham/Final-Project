@@ -1,0 +1,44 @@
+﻿@page
+@model Iportfilo.Pages.myadmin.showexpModel
+@{
+}
+<div class="container">
+    <div class="row" justify-content-center>
+        <div class="col-md-10">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">startyear</th>
+                        <th scope="col">endyear</th>
+                        <th scope="col">JobTitle</th>
+                        <th scope="col">Dec</th>
+                        <th scope="col">Location</th>
+                        <th scope="col" colspan="2">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.experience)
+                    {
+                        <tr>
+                            <th scope="row">@item.Id</th>
+                            <td>@item.startyear</td>
+                            <td>@item.endyear</td>
+                            <td>@item.JobTitle</td>
+                            <td>@item.Dec</td>
+                            <td>@item.Location</td>
+                            <td>
+                                <a class="btn btn-danger" asp-page-handler="Delete" asp-route-Id="@item.Id"> Delete</a>
+                            </td>
+                            <td>
+                                <a class="btn btn-primary" asp-page="editexp" asp-route-Id="@item.Id"> Update</a>
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

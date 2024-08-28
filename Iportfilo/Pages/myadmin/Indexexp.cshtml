@@ -1,0 +1,56 @@
+﻿@page
+@model Iportfilo.Pages.myadmin.IndexexpModel
+@{
+}
+<div class="container">
+    <form method="post">
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <h1>
+                    Experience
+                </h1>
+            </div>
+        </div>
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <label class="form-label">startyear</label>
+                <input class="form-control" asp-for="experience.startyear">
+                <span asp-validation-for="experience.startyear"class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <label class="form-label">endyear</label>
+                <input class="form-control" asp-for="experience.endyear">
+                <span asp-validation-for="experience.endyear" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <label class="form-label">JobTitle</label>
+                <input class="form-control" asp-for="experience.JobTitle">
+                <span asp-validation-for="experience.JobTitle" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <label class="form-label"> Dec </label>
+                <input class="form-control" asp-for="experience.Dec">
+                <span asp-validation-for="experience.Dec" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <label class="form-label"> Location </label>
+                <input class="form-control" asp-for="experience.Location">
+                <span asp-validation-for="experience.Location" class="text-danger"></span>
+            </div>
+        </div>
+       
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <input type="submit" value="Experience" class="btn btn-primary">
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,48 @@
+﻿@page
+@model Iportfilo.Pages.myadmin.Index1Model
+@{
+}
+<div class="container">
+    <form method="post">
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <h1>
+                    Education
+                </h1>
+            </div>
+        </div>
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <label class="form-label">Degree</label>
+                <input class="form-control" asp-for="education.Degree">
+                <span asp-validation-for="education.Degree" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <label class="form-label">startyear</label>
+                <input class="form-control" asp-for="education.startyear">
+                <span asp-validation-for="education.startyear" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <label class="form-label">endyear</label>
+                <input class="form-control" asp-for="education.endyear">
+                <span asp-validation-for="education.endyear" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <label class="form-label">InsistueName</label>
+                <input class="form-control" asp-for="education.InsistueName">
+                <span asp-validation-for="education.InsistueName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <input type="submit" value="AddEducation" class="btn btn-primary">
+            </div>
+        </div>
+    </form>
+</div>

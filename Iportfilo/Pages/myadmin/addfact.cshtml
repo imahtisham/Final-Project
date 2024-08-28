@@ -1,0 +1,42 @@
+﻿@page
+@model Iportfilo.Pages.myadmin.addfactModel
+@{
+}
+<div class="container">
+    <div class="row" justify-content-center>
+        <div class="col-md-10">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Happy Clients</th>
+                        <th scope="col">Hours</th>
+                        <th scope="col">Hard Work</th>
+                        <th scope="col">Projects</th>
+                        <th scope="col" colspan="2">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.fact)
+                    {
+                        <tr>
+                            <th scope="row">@item.Id</th>
+                            <td>@item.client</td>
+                            <td>@item.Hours</td>
+                            <td>@item.Hardwork</td>
+                            <td>@item.Project</td>
+                            <td>
+                                <a class="btn btn-danger" asp-page-handler="Delete" asp-route-Id="@item.Id"> Delete </a>
+                            </td>
+                            <td>
+                                <a class="btn btn-primary" asp-page="showfact" asp-route-Id="@item.Id"> Update</a>
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

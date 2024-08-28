@@ -1,0 +1,44 @@
+﻿@page
+@model Iportfilo.Pages.myadmin.showeditModel
+@{
+}
+<div class="container">
+    <form method="post">
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <h1>
+                    Update Education
+                </h1>
+            </div>
+        </div>
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <label class="form-label">Degree</label>
+                <input class="form-control" asp-for="education.Degree">
+            </div>
+        </div>
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <label class="form-label">startyear</label>
+                <input class="form-control" asp-for="education.startyear">
+            </div>
+        </div>
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <label class="form-label">endyear</label>
+                <input class="form-control" asp-for="education.endyear">
+            </div>
+        </div>
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <label class="form-label">InsistueName</label>
+                <input class="form-control" asp-for="education.InsistueName">
+            </div>
+        </div>
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <input type="submit" value="Update Education" class="btn btn-primary">
+            </div>
+        </div>
+    </form>
+</div>

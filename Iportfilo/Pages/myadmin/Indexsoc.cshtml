@@ -1,0 +1,58 @@
+﻿@page
+@model Iportfilo.Pages.myadmin.IndexsocModel
+@{
+}
+<div class="container">
+    <form method="post">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>
+                    Social Network
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 justify-content-center">
+                <label class="form-label"> Twitter </label>
+                <input class="form-control" asp-for="socialNetwork.Twiter" />
+                <span asp-validation-for="socialNetwork.Twiter" class="text-danger"></span>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 justify-content-center">
+                <label class="form-label"> Facebook </label>
+                <input class="form-control" asp-for="socialNetwork.Facebook" />
+                <span asp-validation-for="socialNetwork.Facebook" class="text-danger"></span>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 justify-content-center">
+                <label class="form-label"> Skype </label>
+                <input class="form-control" asp-for="socialNetwork.skype" />
+                <span asp-validation-for="socialNetwork.skype" class="text-danger"></span>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 justify-content-center">
+                <label class="form-label"> Instagram </label>
+                <input class="form-control" asp-for="socialNetwork.Instagram" />
+                <span asp-validation-for="socialNetwork.Instagram" class="text-danger"></span>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 justify-content-center">
+                <label class="form-label"> LinkdIn </label>
+                <input class="form-control" asp-for="socialNetwork.Linkin" />
+                <span asp-validation-for="socialNetwork.Linkin" class="text-danger"></span>
+                <input type="submit" value="Add Social Links " class="btn btn-primary">
+            </div>
+        </div>
+
+    </form>
+</div>

@@ -1,0 +1,53 @@
+﻿@page
+@model Iportfilo.Pages.myadmin.editexpModel
+@{
+}
+<div class="container">
+    <form method="post">
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <h1>
+                    UpdateExperience
+                </h1>
+            </div>
+        </div>
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <label class="form-label">startyear</label>
+                <input class="form-control" asp-for="experience.startyear">
+                <input class="form-control" hidden asp-for="experience.Id">
+
+            </div>
+        </div>
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <label class="form-label">endyear</label>
+                <input class="form-control" asp-for="experience.endyear">
+            </div>
+        </div>
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <label class="form-label">JobTitle</label>
+                <input class="form-control" asp-for="experience.JobTitle">
+            </div>
+        </div>
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <label class="form-label"> Dec </label>
+                <input class="form-control" asp-for="experience.Dec">
+            </div>
+        </div>
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <label class="form-label"> Location </label>
+                <input class="form-control" asp-for="experience.Location">
+            </div>
+        </div>
+
+        <div class="row" justify-content-center>
+            <div class="col-md-6" justify-content-center>
+                <input type="submit" value="Update Experience" class="btn btn-primary">
+            </div>
+        </div>
+    </form>
+</div>

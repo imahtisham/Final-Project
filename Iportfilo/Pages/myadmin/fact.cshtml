@@ -1,0 +1,42 @@
+﻿@page
+@model Iportfilo.Pages.myadmin.factModel
+@{
+}
+<div class="container">
+    <form method="post">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>
+                    Facts
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 justify-content-center">
+                <label class="form-label"> Happy Clients </label>
+                <input class="form-control" asp-for="facts.client" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 justify-content-center">
+                <label class="form-label"> Hours </label>
+                <input class="form-control" asp-for="facts.Hours" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 justify-content-center">
+                <label class="form-label"> Hardwork </label>
+                <input class="form-control" asp-for="facts.Hardwork" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 justify-content-center">
+                <label class="form-label"> Projects </label>
+                <input class="form-control" asp-for="facts.Project"/>
+
+                <input type="submit" value="Add Facts" class="btn btn-primary">
+
+            </div>
+        </div>
+    </form>
+</div>
